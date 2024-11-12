@@ -1,0 +1,299 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+}
+:root {
+    --color-bg: #f4f6fa;
+    --color-text: #333;
+    --color-primary: #4a90e2;
+    --color-secondary: #f6a623;
+    --color-accent: #50e3c2;
+    --color-border: #d9e1e8;
+    --color-dark-bg: #ffffff;
+    --color-light-bg: #e6edf2;
+}
+body {
+    background: var(--color-bg);
+    color: var(--color-text);
+    line-height: 1.6;
+}
+h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    margin: 1.5rem 0;
+    text-transform: uppercase;
+}
+h2 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--color-secondary);
+    margin: 1rem 0;
+    letter-spacing: 0.5px;
+}
+h4 {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--color-text);
+    margin: 1rem 0;
+}
+h5 {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: var(--color-primary);
+}
+p {
+    color: var(--color-text);
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+.btn {
+    display: inline-block;
+    border: 2px solid var(--color-primary);
+    padding: 10px 25px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--color-primary);
+    border-radius: 20px;
+    background: var(--color-light-bg);
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+.btn:hover {
+    background: var(--color-primary);
+    color: var(--color-dark-bg);
+}
+.btn-primary {
+    background: var(--color-secondary);
+    color: var(--color-dark-bg);
+    border-color: transparent;
+}
+.container {
+    max-width: 1200px;
+    padding: 0 1.5rem;
+    margin: 0 auto;
+}
+nav {
+    height: 4rem;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background: var(--color-dark-bg);
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0 2rem;
+}
+.logo h2 {
+    color: var(--color-primary);
+    font-size: 1.8rem;
+}
+.nav-container ul {
+    display: flex;
+    gap: 1.5rem;
+}
+.nav-container ul li a {
+    color: var(--color-text);
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+.nav-container ul li a:hover {
+    color: var(--color-secondary);
+}
+span {
+    color: var(--color-accent);
+    font-weight: 600;
+}
+header {
+    margin-top: 5rem;
+    padding: 3rem 0;
+    text-align: center;
+    background: var(--color-light-bg);
+}
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.header-container img {
+    max-width: 80%;
+    height: auto;
+    margin: 1.5rem 0;
+}
+.name {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--color-primary);
+}
+.header-action-aria {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    align-items: center;
+    justify-content: center;
+}
+#About {
+    padding-top: 2rem;
+    background: var(--color-dark-bg);
+}
+section > h1 {
+    text-align: center;
+    margin: 3rem 0;
+    color: var(--color-primary);
+    font-size: 2rem;
+}
+.about-container p {
+    margin: 1rem auto;
+    width: 80%;
+    color: var(--color-text);
+    text-align: center;
+    font-size: 1.1rem;
+}
+.about-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    padding: 3rem 0;
+}
+.about-article {
+    background: var(--color-light-bg);
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.about-article img {
+    width: 60px;
+    margin-bottom: 1rem;
+}
+#Services {
+    padding-top: 2rem;
+    background: var(--color-bg);
+}
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 3rem 0;
+}
+.services-article {
+    background: var(--color-dark-bg);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s;
+}
+.services-article:hover {
+    transform: scale(1.05);
+}
+.services-article img {
+    width: 50px;
+    margin-bottom: 1rem;
+}
+#skills {
+    padding-top: 3rem;
+    background: var(--color-light-bg);
+}
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    padding: 3rem 0;
+    text-align: center;
+}
+.skill-article {
+    background: var(--color-dark-bg);
+    padding: 1.2rem;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+#Blog .row {
+    max-width: 900px;
+    margin: 3rem auto;
+}
+#Blog .row .header {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+#Blog .row .header h1 {
+    font-size: 2rem;
+    color: var(--color-secondary);
+}
+#Blog .row .header p {
+    font-size: 1rem;
+    color: var(--color-text);
+}
+.content {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 4rem 0;
+}
+.content .card {
+    flex: 1;
+    max-width: 300px;
+    background: var(--color-light-bg);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+.content .card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+#Contact {
+    padding-top: 2rem;
+    background: var(--color-bg);
+}
+.contact-container {
+    max-width: 800px;
+    margin: 2rem auto;
+}
+form {
+    width: 100%;
+    padding: 2rem;
+    background: var(--color-dark-bg);
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+.form-top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+form input, form textarea {
+    padding: 0.8rem;
+    background: var(--color-light-bg);
+    color: var(--color-text);
+    border: 1px solid var(--color-border);
+    border-radius: 5px;
+    font-size: 1rem;
+}
+footer {
+    text-align: center;
+    padding: 2rem 0;
+    color: var(--color-border);
+    background: var(--color-dark-bg);
+}
+
+.form-bottom{
+    display: block;
+    margin-top: 16px;
+}
